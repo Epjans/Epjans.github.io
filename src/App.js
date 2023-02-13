@@ -7,36 +7,40 @@ const App = () => {
   return (
     <>
       <SectionWrapper 
-        title="You own store of Nifty NFTs. Start Selling & Growing"
-        description="Buy, store, collect NFTS, exchange & earn crypto. Join 25+ million people using ProNef Marketplace."
-        showBtn
+        isLogo
+        title="Bookie"
+        description= "Aplikācija, kas paradzēta vienkāršot un uzlabot lasīšanas pieredzi"
+        // showBtn
         mockupImg={assets.homeHero}
         banner="banner"
       />
       <SectionWrapper 
-        title="Smart User Interface Marketplace"
-        description="Experience a buttery UI of ProNef NFT Marketplace. Smooth constant colors of a fluent UI design."
+        title="Saglabā grāmatas"
+        description="Nofotografē savas grāmatas, un mēs tās pārvērtīsim par
+        virtuālu bibliotēku, lai būtu sajūta, ka lasāmmateriāls viemēr ir pa rokai"
         mockupImg={assets.homeCards}
         reverse
       />
-      <Features />
       <SectionWrapper 
-        title="Deployment"
-        description="ProNef is built using Expo which runs natively on all users' devices. You can easily get your app into people's hands"
+        title="Lasi un pieraksti"
+        description="Sāc lasīšanas sesijas, pieraksti atziņas vai citē tieši no grāmatas, kā arī
+        iegūsti ieskatu par savu
+        lasīšanas progresu"
         mockupImg={assets.feature}
         reverse
       />
       <SectionWrapper 
-        title="Creative way to showcase the store"
-        description="The app contains two screens. The first screen lists all NFTs while the second one shows the details of a specific NFT."
+        title="Izvirzi mērķus un paplašini savu plauktu"
+        description="Mēs palīdzēsim sasniegt vēlamos rezultātus un ieteiksim jaunas grāmatas, lai lasīšana kļūtu par ikdienišķu ieradumu,"
         mockupImg={assets.mockup}
         banner="banner02"
       />
       <Download />
+      {/* <Features /> */}
 
       <div className="px-4 py-2 justify-center items-center bg-primary flex-col text-center banner04">
-        <p className={`${styles.pText} ${styles.whiteText}`}>Made with love by {" "}
-        <span className="bold">JavaScript Mastery</span>
+        <p className={`${styles.pText} ${styles.whiteText}`}>Made by bookies {" "}
+        <span className="bold">for bookies</span>
         </p>
       </div>
     </>

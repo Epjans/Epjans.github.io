@@ -4,11 +4,14 @@ import styles from '../styles/Global';
 import assets from '../assets';
 import Button from './Button';
 
-const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, reverse }) => {
+const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, reverse, isLogo }) => {
   return (
     <div className={`min-h-screen ${styles.section} 
       ${reverse ? styles.bgWhite : styles.bgPrimary} 
       ${banner}`}>
+      {isLogo && (
+      <img className="logo-img" src='/logowhite.png'></img>
+    )} 
       <div className={`flex items-center 
         ${reverse ? styles.boxReverseClass : styles.boxClass} 
         w-11/12 sm:w-full minmd:w-3/4`}>
@@ -34,7 +37,7 @@ const SectionWrapper = ({ title, description, showBtn, mockupImg, banner, revers
         >
           <img src={mockupImg} alt="mockup" className={`
            ${reverse ? " fadeLeftMini" : " fadeRightMini"}
-          ${styles.sectionImg}`} />
+          ${styles.sectionImg} appImg`} />
         </div>
       </div>
     </div>
